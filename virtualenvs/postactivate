@@ -1,0 +1,5 @@
+# vim:ft=sh
+
+PS1="$_OLD_VIRTUAL_PS1"
+_OLD_PROMPT="$RPROMPT"
+RPROMPT="%{${fg_bold[white]}%}(env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%{${fg_bold[white]}%})%{${reset_color}%} $RPROMPT"
