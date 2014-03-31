@@ -1,0 +1,52 @@
+; vim:ft=gitconfig
+
+[core]
+    editor = vim
+    safecrlf = true
+
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    last = log -1 HEAD
+    lg = !"git lg1"
+    lg1 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold white)— %an%C(reset)%C(bold yellow)%d%C(reset)' --abbrev-commit --date=relative
+    lg2 = log --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)— %an%C(reset)' --abbrev-commit
+    s = status --short --branch
+    st = status
+    unstage = reset HEAD --
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = auto
+
+[color "branch"]
+    current = green bold
+    local = green
+    remote = red bold
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green bold
+    changed = yellow bold
+    untracked = red
+
+[help]
+    autocorrent = 1
+
+[status]
+    submodule = 1
+
+[push]
+    default = current
+
+[rerere]
+    enabled = true
