@@ -1,5 +1,12 @@
 ; vim:ft=gitconfig
 
+[github]
+    user = maralla
+
+[user]
+    name = maralla
+    email = maralla.ai@gmail.com
+
 [core]
     editor = vim
     safecrlf = true
