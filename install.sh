@@ -20,7 +20,7 @@ git clone https://github.com/maralla/dotfiles.git ~/.dotfiles || exit 1
 echo "unlinking old files ..."
 rm -v ~/.tmux.conf
 rm -v ~/.gitconfig
-rm -v ~/.pip
+rm -vrf ~/.pip
 rm -vrf ~/.virtualenvs
 
 echo "linking new files ..."
