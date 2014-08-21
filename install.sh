@@ -3,14 +3,15 @@
 TEMP=`mktemp -d /tmp/virtualenv.XXXX`
 
 echo "removing existing dotfiles ..."
-if [ -d ~/.dotfiles/virtualenvs ]
+if [ -L ~/.virtualenvs ] || [ -d ~/.virtualenvs ]
 then
-    ENVS=`find ~/.dotfiles/virtualenvs -mindepth 1 -maxdepth 1 -type d`
+    ENVS=`find -L ~/.virtualenvs -mindepth 1 -maxdepth 1 -type d`
     for e in $ENVS
     do
         mv $e $TEMP
     done
 fi
+
 rm -rf ~/.dotfiles
 
 echo "cloning new dotfiles ..."
@@ -20,7 +21,7 @@ echo "unlinking old files ..."
 rm -v ~/.tmux.conf
 rm -v ~/.gitconfig
 rm -v ~/.pip
-rm -v ~/.virtualenvs
+rm -vrf ~/.virtualenvs
 
 echo "linking new files ..."
 ln -vs ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
