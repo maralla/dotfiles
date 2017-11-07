@@ -6,6 +6,7 @@
 [user]
     name = maralla
     email = maralla.ai@gmail.com
+	signingkey = 500520AD542DB863
 
 [core]
     editor = vim
@@ -13,7 +14,7 @@
 
 [alias]
     br = branch
-    ci = commit
+    ci = commit -S
     co = checkout
     sm = submodule
     last = log -1 HEAD
