@@ -184809,7 +184809,7 @@ unicode = F020;
 },
 {
 glyphname = shellprompt;
-lastChange = "2018-06-02 09:10:04 +0000";
+lastChange = "2018-06-02 11:44:38 +0000";
 layers = (
 {
 layerId = "8A8F53B0-DF48-4C43-86E4-F0539724E722";
@@ -184817,13 +184817,13 @@ paths = (
 {
 closed = 1;
 nodes = (
-"695 648 LINE",
-"573 19 LINE",
-"1099 730 LINE",
-"573 1441 LINE",
-"695 818 LINE",
-"34 871 LINE",
-"34 599 LINE"
+"1019 621 LINE",
+"755 69 LINE",
+"1499 730 LINE",
+"755 1391 LINE",
+"1019 847 LINE",
+"234 917 LINE",
+"234 556 LINE"
 );
 }
 );
