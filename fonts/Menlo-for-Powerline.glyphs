@@ -1,5 +1,8 @@
 {
 .appVersion = "939";
+DisplayStrings = (
+/shellprompt
+);
 copyright = "Copyright © 2009 Apple Inc. Copyright ©  2006 by Tavmjong Bah. Copyright © 2003 by Bitstream, Inc. All Rights Reserved.";
 customParameters = (
 {
@@ -184803,6 +184806,31 @@ width = 1767;
 }
 );
 unicode = F020;
+},
+{
+glyphname = shellprompt;
+lastChange = "2018-06-02 09:10:04 +0000";
+layers = (
+{
+layerId = "8A8F53B0-DF48-4C43-86E4-F0539724E722";
+paths = (
+{
+closed = 1;
+nodes = (
+"695 648 LINE",
+"573 19 LINE",
+"1099 730 LINE",
+"573 1441 LINE",
+"695 818 LINE",
+"34 871 LINE",
+"34 599 LINE"
+);
+}
+);
+width = 1233;
+}
+);
+unicode = F021;
 }
 );
 instances = (
