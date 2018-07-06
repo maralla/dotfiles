@@ -1,7 +1,7 @@
 {
 .appVersion = "939";
 DisplayStrings = (
-/shellprompt
+/file
 );
 copyright = "Copyright © 2009 Apple Inc. Copyright ©  2006 by Tavmjong Bah. Copyright © 2003 by Bitstream, Inc. All Rights Reserved.";
 customParameters = (
@@ -184806,6 +184806,84 @@ width = 1767;
 }
 );
 unicode = F020;
+},
+{
+glyphname = file;
+lastChange = "2018-07-06 06:36:40 +0000";
+layers = (
+{
+layerId = "8A8F53B0-DF48-4C43-86E4-F0539724E722";
+paths = (
+{
+closed = 1;
+nodes = (
+"1242 1166 LINE",
+"1242 -133 LINE SMOOTH",
+"1242 -209 OFFCURVE",
+"1183 -270 OFFCURVE",
+"1111 -270 CURVE SMOOTH",
+"-209 -270 LINE",
+"-287 -277 OFFCURVE",
+"-347 -215 OFFCURVE",
+"-340 -133 CURVE",
+"-340 1507 LINE SMOOTH",
+"-340 1582 OFFCURVE",
+"-280 1644 OFFCURVE",
+"-209 1644 CURVE SMOOTH",
+"781 1644 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"1203 1139 LINE",
+"779 1586 LINE",
+"-284 1575 LINE",
+"-289 -211 LINE",
+"1182 -216 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"451 1182 LINE",
+"-76 1182 LINE",
+"-76 1234 LINE",
+"451 1234 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-76 772 LINE",
+"847 772 LINE",
+"847 824 LINE",
+"-76 824 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-76 481 LINE",
+"847 481 LINE",
+"847 531 LINE",
+"-76 531 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-76 187 LINE",
+"847 187 LINE",
+"847 239 LINE",
+"-76 239 LINE"
+);
+}
+);
+width = 600;
+}
+);
+unicode = F022;
 },
 {
 glyphname = shellprompt;
