@@ -20,4 +20,3 @@ ln -vs ~/.dotfiles/mpv ~/.config/mpv
 
 echo "Install virtualfish"
 virtualenv -p `which python2.7` ~/.dotfiles/virtualenvs/py2
-~/.dotfiles/virtualenvs/py2/bin/pip install virtualfish
