@@ -4,8 +4,8 @@
     user = maralla
 
 [user]
-    name = maralla
-    email = maralla.ai@gmail.com
+	name = maralla
+	email = maralla.ai@gmail.com
 	signingkey = 500520AD542DB863
 
 [core]

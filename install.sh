@@ -29,3 +29,7 @@ ln -vs $HOME/.dotfiles/ipython_config.py $IPYTHON_PROFILE_PATH/ipython_config.py
 
 echo "Install virtualfish"
 virtualenv -p `which python2.7` ~/.dotfiles/virtualenvs/py2
+
+# Generate xterm italic effect.
+echo "Gen terminfo database"
+tic -o ~/.terminfo ~/.dotfiles/xterm/xterm.txt
