@@ -6,11 +6,13 @@
 [user]
 	name = maralla
 	email = maralla.ai@gmail.com
-	signingkey = 500520AD542DB863
+	signingkey = 147128D3997AF4C8
 
 [core]
     editor = vim
-    safecrlf = true
+    # safecrlf = true
+	autocrlf = false
+    # pager = delta --plus-color="#034F00" --minus-color="#520001" --theme="TwoDark" --keep-plus-minus-markers --hunk-style=plain
 
 [alias]
     br = branch
@@ -48,6 +50,9 @@
     changed = yellow
     untracked = red
 
+[interactive]
+    diffFilter = delta --color-only
+
 [help]
     autocorrent = 1
 
@@ -57,5 +62,10 @@
 [push]
     default = current
 
+; Reuse recorded resolution of conflicted merges.
 [rerere]
-    enabled = true
+	enabled = true
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff

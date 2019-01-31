@@ -17,6 +17,7 @@ echo "unlinking old files ..."
 rm -v ~/.tmux.conf
 rm -v ~/.gitconfig
 rm -v ~/.config/mpv
+rm -v ~/.golangci.yml
 rm -vrf ~/.pip
 rm $IPYTHON_PROFILE_PATH/ipython_config.py > /dev/null 2>&1
 
@@ -24,6 +25,8 @@ echo "linking new files ..."
 ln -vs ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -vs ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -vs ~/.dotfiles/pip ~/.pip
+ln -vs ~/.dotfiles/golangci.yml ~/.golangci.yml
+ln -vs ~/.dotfiles/alacritty.yml ~/.alacritty.yml
 ln -vs ~/.dotfiles/mpv ~/.config/mpv
 ln -vs $HOME/.dotfiles/ipython_config.py $IPYTHON_PROFILE_PATH/ipython_config.py
 
