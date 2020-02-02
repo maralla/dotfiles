@@ -6,7 +6,7 @@
 [user]
 	name = maralla
 	email = maralla.ai@gmail.com
-	signingkey = 500520AD542DB863
+	signingkey = 147128D3997AF4C8
 
 [core]
     editor = vim
