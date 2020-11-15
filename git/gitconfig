@@ -4,9 +4,9 @@
     user = maralla
 
 [user]
-	name = wei.zhang02
-	email = wei.zhang02@mihoyo.com
-	signingkey = E81DBA9406FC644B
+	name = maralla
+	email = maralla.ai@gmail.com
+	signingkey = 147128D3997AF4C8
 
 [core]
     editor = vim
