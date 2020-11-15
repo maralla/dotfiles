@@ -4,13 +4,15 @@
     user = maralla
 
 [user]
-	name = maralla
-	email = maralla.ai@gmail.com
-	signingkey = 147128D3997AF4C8
+	name = wei.zhang02
+	email = wei.zhang02@mihoyo.com
+	signingkey = E81DBA9406FC644B
 
 [core]
     editor = vim
-    safecrlf = true
+    # safecrlf = true
+	autocrlf = false
+    pager = delta --plus-color="#034F00" --minus-color="#520001" --theme="TwoDark" --keep-plus-minus-markers --hunk-style=plain
 
 [alias]
     br = branch
@@ -48,6 +50,9 @@
     changed = yellow
     untracked = red
 
+[interactive]
+    diffFilter = delta --color-only
+
 [help]
     autocorrent = 1
 
@@ -57,5 +62,10 @@
 [push]
     default = current
 
+; Reuse recorded resolution of conflicted merges.
 [rerere]
-    enabled = true
+	enabled = true
+[url "git@platgit.mihoyo.com:"]
+	insteadOf = https://platgit.mihoyo.com/
+[merge]
+	tool = vimdiff

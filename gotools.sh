@@ -5,14 +5,16 @@ GOPATH=$HOME/Workspace/app
 echo Install gocode
 go get -u github.com/stamblerre/gocode
 
+export GO111MODULE="on"
+
 echo Install goimports
-go get -u golang.org/x/tools/cmd/goimports
+go get golang.org/x/tools/cmd/goimports
 
 echo Install golangci
-go get -u github.com/golangci/golangci-lint/cmd/golangci-lint
+go get github.com/golangci/golangci-lint/cmd/golangci-lint
 
 echo Install gopls
-go get -u golang.org/x/tools/cmd/gopls
+go get golang.org/x/tools/cmd/gopls
 
 echo Install guru
-go get -u golang.org/x/tools/cmd/guru
+go get golang.org/x/tools/cmd/guru

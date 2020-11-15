@@ -1,3 +1,18 @@
+linters-settings:
+  funlen:
+    lines: 100
+    statements: 60
+
+  gocognit:
+    min-complexity: 40
+
+  lll:
+    line-length: 140
+
+issues:
+  include:
+    - EXC0002
+
 linters:
   diable-all: true
   enable:
@@ -8,7 +23,6 @@ linters:
     - dupl
     - errcheck
     - funlen
-    - gochecknoinits
     - goconst
     - gocritic
     - gocyclo
@@ -26,7 +40,7 @@ linters:
     - misspell
     - nakedret
     - rowserrcheck
-    - scopelint
+    - exportloopref
     - staticcheck
     - structcheck
     - typecheck
@@ -41,3 +55,10 @@ linters:
     - prealloc
     - stylecheck
     - wsl
+    - godot
+    - goerr113
+    - sqlclosecheck
+    - gci
+
+run:
+  tests: true
