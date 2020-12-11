@@ -26,6 +26,7 @@ ln -vs ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -vs ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -vs ~/.dotfiles/pip ~/.pip
 ln -vs ~/.dotfiles/golangci.yml ~/.golangci.yml
+ln -vs ~/.dotfiles/alacritty.yml ~/.alacritty.yml
 ln -vs ~/.dotfiles/mpv ~/.config/mpv
 ln -vs $HOME/.dotfiles/ipython_config.py $IPYTHON_PROFILE_PATH/ipython_config.py
 
