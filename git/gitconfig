@@ -69,3 +69,5 @@
 	insteadOf = https://platgit.mihoyo.com/
 [merge]
 	tool = vimdiff
+[diff]
+	tool = vimdiff

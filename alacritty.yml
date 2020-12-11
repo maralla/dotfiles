@@ -96,19 +96,19 @@ font:
     style: Italic
 
   # Point size
-  size: 10.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 1
-    y: 2
+    x: 0
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
-    x: -23
+    x: 0
     y: 0
 
   # Thin stroke font rendering (macOS only)
@@ -163,7 +163,7 @@ colors:
   normal:
     black:   '0x000000'
     red:     '0xd54e53'
-    green:   '0xb9ca4a'
+    green:   '#249c2c'
     yellow:  '0xe6c547'
     blue:    '#5b92d2'
     magenta: '0xc397d8'
@@ -176,7 +176,7 @@ colors:
   bright:
     black:   '0x666666'
     red:     '0xff3334'
-    green:   '0x9ec400'
+    green:   '#249c2c'
     yellow:  '0xe7c547'
     blue:    '#5b92d2'
     magenta: '0xb77ee0'
@@ -444,8 +444,12 @@ key_bindings:
 
   - { key: Paste,                   action: Paste                        }
   - { key: Copy,                    action: Copy                         }
+
   - { key: C,        mods: Super,   action: Copy                         }
   - { key: V,        mods: Super,   action: Paste                        }
+  - { key: F,        mods: Super,   action: SearchForward                }
+  - { key: B,        mods: Super,   action: SearchBackward               }
+
   - { key: L,        mods: Control, action: ClearLogNotice               }
   - { key: L,        mods: Control, chars: "\x0c"                        }
   - { key: Home,                    chars: "\x1bOH",   mode: AppCursor   }
